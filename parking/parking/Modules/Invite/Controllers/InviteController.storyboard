@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0PQ-r3-hKO">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FZLTCHJW__GB1_0.ttf">
+            <string>FZLTCHJW--GB1-0</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--邀请有奖-->
+        <scene sceneID="792-le-zLR">
+            <objects>
+                <viewController title="邀请有奖" id="0PQ-r3-hKO" customClass="InviteController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XQM-1m-Cdk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tkz-RX-EPo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yFf-QN-v6a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUz-kf-bUp" userLabel="QQ好友">
+                                <rect key="frame" x="202.5" y="574" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="sY7-Qw-VVa"/>
+                                    <constraint firstAttribute="width" secondItem="pUz-kf-bUp" secondAttribute="height" multiplier="1:1" id="yja-JH-iGy"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="invite_button_qq_nor"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biQ-iL-eya" userLabel="新浪微博">
+                                <rect key="frame" x="277.5" y="574" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="xsz-MV-1ds"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="invite_button_weibo_nor"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYO-QB-QP5" userLabel="朋友圈">
+                                <rect key="frame" x="127.5" y="574" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="g1w-11-Umu"/>
+                                    <constraint firstAttribute="width" secondItem="YYO-QB-QP5" secondAttribute="height" multiplier="1:1" id="yek-8C-kM0"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="invite_button_timeline_nor"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hj2-HE-VaG" userLabel="微信好友">
+                                <rect key="frame" x="52.5" y="574" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="TxS-Be-Rcv"/>
+                                    <constraint firstAttribute="width" secondItem="hj2-HE-VaG" secondAttribute="height" multiplier="1:1" id="bzg-ZM-G3H"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="invite_button_wechat_nor"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信好友" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83T-xI-a5D">
+                                <rect key="frame" x="53" y="629" width="44" height="15.5"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="11"/>
+                                <color key="textColor" red="0.54117647058823526" green="0.54117647058823526" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朋友圈" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAm-fI-neH">
+                                <rect key="frame" x="133.5" y="629" width="33" height="15.5"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="11"/>
+                                <color key="textColor" red="0.54117647059999996" green="0.54117647059999996" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QQ好友" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="foi-JA-ziE">
+                                <rect key="frame" x="205.5" y="629" width="39" height="15.5"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="11"/>
+                                <color key="textColor" red="0.54117647059999996" green="0.54117647059999996" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新浪微博" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r4w-la-2Fc">
+                                <rect key="frame" x="278" y="629" width="44" height="15.5"/>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="11"/>
+                                <color key="textColor" red="0.54117647059999996" green="0.54117647059999996" blue="0.54117647059999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享至" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2jB-OJ-BKK">
+                                <rect key="frame" x="166" y="532" width="42" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="kF9-ES-GU8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                                <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invite_image_bg_nor" translatesAutoresizingMaskIntoConstraints="NO" id="6Hh-Lr-Vfe" userLabel="蓝色背景">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="510"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Eo-eb-Rsg" userLabel="背景">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="510"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="invite_image_envelope_nor" translatesAutoresizingMaskIntoConstraints="NO" id="0lh-dr-VDX" userLabel="红包">
+                                        <rect key="frame" x="65" y="90" width="244" height="242"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="0lh-dr-VDX" secondAttribute="height" multiplier="482:478" id="ztN-TJ-df1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="225" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rW0-FI-V9o">
+                                        <rect key="frame" x="126.5" y="404" width="70.5" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="iOy-78-28Y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FZLTCHJW--GB1-0" family="FZLanTingHeiS-B-GB" pointSize="36"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀请好友，好友与你将各获得" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UX-el-bdm">
+                                        <rect key="frame" x="70.5" y="374" width="234.5" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="X53-Ti-Sgk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="积分" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y4m-nP-CGR">
+                                        <rect key="frame" x="197" y="407.5" width="48" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="hUd-8h-A7R"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FZLTCHJW--GB1-0" family="FZLanTingHeiS-B-GB" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U0g-tZ-cVJ">
+                                        <rect key="frame" x="154" y="468" width="66" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="vlm-ZS-Ux8"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="查看详细规则">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.12157" green="0.52941000000000005" blue="0.76471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="11" name="PingFangSC-Regular"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                            <tabStops>
+                                                                <textTab alignment="left" location="28">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="56">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="84">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="112">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="140">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="168">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="196">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="224">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="252">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="280">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="308">
+                                                                    <options/>
+                                                                </textTab>
+                                                                <textTab alignment="left" location="336">
+                                                                    <options/>
+                                                                </textTab>
+                                                            </tabStops>
+                                                        </paragraphStyle>
+                                                        <integer key="NSUnderline" value="1"/>
+                                                        <color key="NSUnderlineColor" red="0.12157" green="0.52941000000000005" blue="0.76471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="y4m-nP-CGR" firstAttribute="leading" secondItem="rW0-FI-V9o" secondAttribute="trailing" id="2nS-lG-gYd"/>
+                                    <constraint firstItem="0lh-dr-VDX" firstAttribute="top" secondItem="0Eo-eb-Rsg" secondAttribute="top" constant="90" id="98O-yt-XV9"/>
+                                    <constraint firstItem="U0g-tZ-cVJ" firstAttribute="top" secondItem="rW0-FI-V9o" secondAttribute="bottom" constant="24" id="CnJ-d8-R42"/>
+                                    <constraint firstItem="rW0-FI-V9o" firstAttribute="centerX" secondItem="0Eo-eb-Rsg" secondAttribute="centerX" constant="-26" id="FL9-sX-XhD"/>
+                                    <constraint firstItem="6UX-el-bdm" firstAttribute="top" secondItem="0lh-dr-VDX" secondAttribute="bottom" constant="42" id="L6l-fz-mtb"/>
+                                    <constraint firstItem="6UX-el-bdm" firstAttribute="centerX" secondItem="0lh-dr-VDX" secondAttribute="centerX" id="TBF-fY-kIP"/>
+                                    <constraint firstItem="rW0-FI-V9o" firstAttribute="top" secondItem="6UX-el-bdm" secondAttribute="bottom" constant="10" id="Y6G-Ib-xCr"/>
+                                    <constraint firstItem="y4m-nP-CGR" firstAttribute="bottom" secondItem="rW0-FI-V9o" secondAttribute="bottom" id="aDV-aX-KoY"/>
+                                    <constraint firstAttribute="bottom" secondItem="U0g-tZ-cVJ" secondAttribute="bottom" constant="26" id="chU-1h-RVC"/>
+                                    <constraint firstItem="U0g-tZ-cVJ" firstAttribute="centerX" secondItem="0Eo-eb-Rsg" secondAttribute="centerX" id="oiY-lo-Gvp"/>
+                                    <constraint firstItem="0lh-dr-VDX" firstAttribute="centerX" secondItem="0Eo-eb-Rsg" secondAttribute="centerX" id="u7B-Kp-Ivu"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pUz-kf-bUp" firstAttribute="leading" secondItem="yFf-QN-v6a" secondAttribute="centerX" constant="15" id="0rS-68-RJr"/>
+                            <constraint firstItem="2jB-OJ-BKK" firstAttribute="centerX" secondItem="yFf-QN-v6a" secondAttribute="centerX" id="5wO-jc-vvV"/>
+                            <constraint firstItem="biQ-iL-eya" firstAttribute="bottom" secondItem="pUz-kf-bUp" secondAttribute="bottom" id="8E6-1I-81T"/>
+                            <constraint firstItem="0Eo-eb-Rsg" firstAttribute="top" secondItem="yFf-QN-v6a" secondAttribute="top" id="BKr-VY-zhk"/>
+                            <constraint firstItem="foi-JA-ziE" firstAttribute="centerX" secondItem="pUz-kf-bUp" secondAttribute="centerX" id="FAT-34-apN"/>
+                            <constraint firstItem="YYO-QB-QP5" firstAttribute="leading" secondItem="hj2-HE-VaG" secondAttribute="trailing" constant="30" id="GBc-Kl-8u1"/>
+                            <constraint firstItem="0Eo-eb-Rsg" firstAttribute="bottom" secondItem="6Hh-Lr-Vfe" secondAttribute="bottom" id="HLS-y0-V3c"/>
+                            <constraint firstItem="hj2-HE-VaG" firstAttribute="bottom" secondItem="YYO-QB-QP5" secondAttribute="bottom" id="HTv-2z-Ho9"/>
+                            <constraint firstAttribute="trailing" secondItem="6Hh-Lr-Vfe" secondAttribute="trailing" id="IIp-CD-d6b"/>
+                            <constraint firstItem="2jB-OJ-BKK" firstAttribute="top" secondItem="6Hh-Lr-Vfe" secondAttribute="bottom" constant="22" id="MOa-8s-Nj8"/>
+                            <constraint firstItem="pUz-kf-bUp" firstAttribute="top" secondItem="2jB-OJ-BKK" secondAttribute="bottom" constant="22" id="Mwg-ea-opK"/>
+                            <constraint firstAttribute="bottom" secondItem="pUz-kf-bUp" secondAttribute="bottom" constant="48" id="ODa-wg-Yj2"/>
+                            <constraint firstItem="YYO-QB-QP5" firstAttribute="bottom" secondItem="pUz-kf-bUp" secondAttribute="bottom" id="QlM-mt-0ej"/>
+                            <constraint firstItem="biQ-iL-eya" firstAttribute="width" secondItem="biQ-iL-eya" secondAttribute="height" multiplier="1:1" id="RYd-sF-f39"/>
+                            <constraint firstItem="83T-xI-a5D" firstAttribute="centerX" secondItem="hj2-HE-VaG" secondAttribute="centerX" id="SLf-Xy-5fQ"/>
+                            <constraint firstItem="biQ-iL-eya" firstAttribute="leading" secondItem="pUz-kf-bUp" secondAttribute="trailing" constant="30" id="X2C-xF-piV"/>
+                            <constraint firstItem="0Eo-eb-Rsg" firstAttribute="leading" secondItem="yFf-QN-v6a" secondAttribute="leading" id="YrS-4S-fbD"/>
+                            <constraint firstItem="VAm-fI-neH" firstAttribute="top" secondItem="YYO-QB-QP5" secondAttribute="bottom" constant="10" id="f9h-Bb-rOQ"/>
+                            <constraint firstItem="6Hh-Lr-Vfe" firstAttribute="leading" secondItem="yFf-QN-v6a" secondAttribute="leading" id="jIz-Fe-4xY"/>
+                            <constraint firstAttribute="trailing" secondItem="0Eo-eb-Rsg" secondAttribute="trailing" id="kHb-Lh-D1s"/>
+                            <constraint firstItem="foi-JA-ziE" firstAttribute="top" secondItem="pUz-kf-bUp" secondAttribute="bottom" constant="10" id="nPY-tu-edd"/>
+                            <constraint firstItem="VAm-fI-neH" firstAttribute="centerX" secondItem="YYO-QB-QP5" secondAttribute="centerX" id="oSX-fS-2Vw"/>
+                            <constraint firstItem="r4w-la-2Fc" firstAttribute="top" secondItem="biQ-iL-eya" secondAttribute="bottom" constant="10" id="sqe-G0-RwX"/>
+                            <constraint firstItem="6Hh-Lr-Vfe" firstAttribute="top" secondItem="yFf-QN-v6a" secondAttribute="top" id="syf-S2-eAz"/>
+                            <constraint firstItem="83T-xI-a5D" firstAttribute="top" secondItem="hj2-HE-VaG" secondAttribute="bottom" constant="10" id="uHR-Qy-V1S"/>
+                            <constraint firstItem="r4w-la-2Fc" firstAttribute="centerX" secondItem="biQ-iL-eya" secondAttribute="centerX" id="xjs-sL-rk5"/>
+                            <constraint firstItem="YYO-QB-QP5" firstAttribute="trailing" secondItem="yFf-QN-v6a" secondAttribute="centerX" constant="-15" id="yjt-iQ-7cv"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1kS-mR-bd7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="invite_button_qq_nor" width="45" height="45"/>
+        <image name="invite_button_timeline_nor" width="45" height="45"/>
+        <image name="invite_button_wechat_nor" width="45" height="45"/>
+        <image name="invite_button_weibo_nor" width="45" height="45"/>
+        <image name="invite_image_bg_nor" width="375" height="462"/>
+        <image name="invite_image_envelope_nor" width="241" height="239"/>
+    </resources>
+</document>

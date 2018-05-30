@@ -1,0 +1,53 @@
+//
+//  ParkingPrefixHeader.pch
+//  parking
+//
+//  Created by Robert Xu on 2017/5/18.
+//  Copyright © 2017年 huafangcloud. All rights reserved.
+//
+
+#ifndef ParkingPrefixHeader_pch
+#define ParkingPrefixHeader_pch
+
+//宏定义
+#import "ParkingMacros.h"
+
+//全局常量
+#import "COLConstant.h"
+
+//中介者
+#import "COLMediator.h"
+
+//MVP之P协议
+#import "COLPresenterProtocol.h"
+
+//基类
+//#import "COLBaseController.h"
+//修改默认顶部样式
+#import "UIViewController+Helper.h"
+
+//滑动
+#import "UIViewController+MMDrawerController.h"
+
+//Xib设置borderUIColor颜色
+#import "CALayer+XibConfiguration.h"
+
+//工具类
+#import "NSString+COLHelper.h"
+#import "COLSingleton.h"
+#import "YTKBaseRequest+Result.h"
+#import <YYModel/YYModel.h>
+#import <YYCache/YYCache.h>
+#import "COLToast.h"
+#import "NSString+COLHelper.h"
+#import "MJExtension.h"
+#import "UIImageView+WebCache.h"
+#import <AlipaySDK/AlipaySDK.h>
+
+
+//本地存储
+#import "UserData.h"
+#import "AccountService.h"
+#endif /* ParkingPrefixHeader_pch */
+
+

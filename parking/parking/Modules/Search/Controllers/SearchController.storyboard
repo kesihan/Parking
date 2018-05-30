@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kPg-nG-Xjf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search Controller-->
+        <scene sceneID="l1k-lQ-kIa">
+            <objects>
+                <viewController id="kPg-nG-Xjf" customClass="SearchController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y8z-k6-10x"/>
+                        <viewControllerLayoutGuide type="bottom" id="jct-Ps-Y2c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="SearchController" id="rIl-Pd-DY8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OMB-OV-YRH" customClass="DLTabedSlideView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="bjV-zy-aOZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="kPg-nG-Xjf" id="bJx-8H-Ejz"/>
+                                    <outlet property="delegate" destination="kPg-nG-Xjf" id="73K-Py-UUo"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OMB-OV-YRH" firstAttribute="leading" secondItem="rIl-Pd-DY8" secondAttribute="leading" id="89u-nr-LFw"/>
+                            <constraint firstAttribute="bottom" secondItem="OMB-OV-YRH" secondAttribute="bottom" id="Eqo-ID-UnK"/>
+                            <constraint firstAttribute="bottom" secondItem="bjV-zy-aOZ" secondAttribute="bottom" id="X6a-dN-KNQ"/>
+                            <constraint firstAttribute="trailing" secondItem="OMB-OV-YRH" secondAttribute="trailing" id="Yqh-zQ-NwL"/>
+                            <constraint firstItem="OMB-OV-YRH" firstAttribute="top" secondItem="Y8z-k6-10x" secondAttribute="bottom" id="gUj-BA-EVs"/>
+                            <constraint firstItem="bjV-zy-aOZ" firstAttribute="leading" secondItem="rIl-Pd-DY8" secondAttribute="leading" id="q1R-zW-Y6a"/>
+                            <constraint firstItem="bjV-zy-aOZ" firstAttribute="top" secondItem="Y8z-k6-10x" secondAttribute="bottom" id="q1l-2B-w9M"/>
+                            <constraint firstAttribute="trailing" secondItem="bjV-zy-aOZ" secondAttribute="trailing" id="ucC-p0-dcx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tabedSlideView" destination="OMB-OV-YRH" id="eb6-MT-xRF"/>
+                        <outlet property="tableView" destination="bjV-zy-aOZ" id="vZG-s6-0rT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uBg-3x-vN2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2" y="131"/>
+        </scene>
+    </scenes>
+</document>

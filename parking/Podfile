@@ -1,0 +1,18 @@
+source "https://github.com/CocoaPods/Specs.git"
+
+platform :ios, "7.0"
+#use_frameworks!个别需要用到它，比如reactiveCocoa
+
+target ‘parking’ do
+    pod 'YTKNetwork',             '2.0.3'
+    pod 'YYModel',                '1.0.4'
+    pod 'MMPopupView',            '1.7.2'
+    pod 'YYCache',                '1.0.4'
+    pod 'MJRefresh',              '3.1.12'
+    pod 'JPush'
+    pod 'SVProgressHUD'
+    pod 'MJExtension'
+    pod 'SDWebImage'        , '~> 3.8.2'
+end
+
+inhibit_all_warnings!

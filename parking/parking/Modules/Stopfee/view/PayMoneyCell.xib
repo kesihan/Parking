@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PayMoneyCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6E-rC-BjB">
+                        <rect key="frame" x="0.0" y="50" width="320" height="5"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="ana-3R-VkP"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eGn-zD-nZC">
+                        <rect key="frame" x="10" y="15" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="bQF-Vf-m6z"/>
+                            <constraint firstAttribute="height" constant="25" id="s0k-xc-xRN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kV3-oY-IRe">
+                        <rect key="frame" x="45" y="0.0" width="225" height="55"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXo-jT-zxC">
+                        <rect key="frame" x="290" y="0.0" width="20" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="fV2-oA-A2M"/>
+                        </constraints>
+                        <state key="normal" image="未选中"/>
+                        <state key="selected" image="选中"/>
+                        <connections>
+                            <action selector="chosebtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="aMj-50-jeU"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eGn-zD-nZC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Cox-25-Tgp"/>
+                    <constraint firstAttribute="bottom" secondItem="NXo-jT-zxC" secondAttribute="bottom" id="JIp-80-53e"/>
+                    <constraint firstAttribute="bottom" secondItem="kV3-oY-IRe" secondAttribute="bottom" id="MoN-fl-a93"/>
+                    <constraint firstItem="NXo-jT-zxC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="P9y-Ch-FXd"/>
+                    <constraint firstItem="eGn-zD-nZC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Q75-eU-Ywd"/>
+                    <constraint firstAttribute="trailing" secondItem="C6E-rC-BjB" secondAttribute="trailing" id="SWE-hA-eMd"/>
+                    <constraint firstAttribute="trailing" secondItem="kV3-oY-IRe" secondAttribute="trailing" constant="50" id="acD-bm-CFb"/>
+                    <constraint firstAttribute="trailing" secondItem="NXo-jT-zxC" secondAttribute="trailing" constant="10" id="dF3-fr-4jY"/>
+                    <constraint firstAttribute="bottom" secondItem="C6E-rC-BjB" secondAttribute="bottom" id="fgC-hL-MgJ"/>
+                    <constraint firstItem="kV3-oY-IRe" firstAttribute="leading" secondItem="eGn-zD-nZC" secondAttribute="trailing" constant="10" id="sa2-G9-okR"/>
+                    <constraint firstItem="C6E-rC-BjB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tVK-DO-6aq"/>
+                    <constraint firstItem="kV3-oY-IRe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wsI-nh-8GI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chose_btn" destination="NXo-jT-zxC" id="nVw-he-KpY"/>
+                <outlet property="img" destination="eGn-zD-nZC" id="8eC-Ns-oEG"/>
+                <outlet property="lb" destination="kV3-oY-IRe" id="Bej-qa-gZV"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="未选中" width="20" height="20"/>
+        <image name="选中" width="20" height="20"/>
+    </resources>
+</document>

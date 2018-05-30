@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Poj-Db-Z3R">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--账号管理-->
+        <scene sceneID="XhS-To-odg">
+            <objects>
+                <viewController title="账号管理" id="Poj-Db-Z3R" customClass="AccountController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kNv-Wq-FF4"/>
+                        <viewControllerLayoutGuide type="bottom" id="M3F-Oq-m0G"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SQx-Ok-OYa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="J54-WU-gVz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Poj-Db-Z3R" id="9jj-Yf-ASC"/>
+                                    <outlet property="delegate" destination="Poj-Db-Z3R" id="W85-iZ-HfB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M3F-Oq-m0G" firstAttribute="top" secondItem="J54-WU-gVz" secondAttribute="bottom" id="2mG-X3-c6f"/>
+                            <constraint firstAttribute="trailing" secondItem="J54-WU-gVz" secondAttribute="trailing" id="39z-ok-EFW"/>
+                            <constraint firstItem="J54-WU-gVz" firstAttribute="leading" secondItem="SQx-Ok-OYa" secondAttribute="leading" id="5eP-dd-9lU"/>
+                            <constraint firstItem="J54-WU-gVz" firstAttribute="top" secondItem="SQx-Ok-OYa" secondAttribute="top" id="SRf-f4-Own"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="J54-WU-gVz" id="nuR-bW-Cab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gh0-Hj-dEG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.6" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+</document>

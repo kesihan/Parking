@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MessageCenterCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vre-Ac-Hbm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="车辆进场通知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2V-ec-GQW">
+                                <rect key="frame" x="15" y="15" width="92" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="HQe-n4-N3m"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="huC-Bv-UQr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-12-05 11:11:11" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZX-L6-1uP">
+                                <rect key="frame" x="110" y="15" width="200" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="LRU-ZV-oml"/>
+                                    <constraint firstAttribute="width" constant="200" id="vFT-gb-U2K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您好，您的车辆闽C0123于05-11 12:00:00入场。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7H-Rg-gaO">
+                                <rect key="frame" x="15" y="43" width="295" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="cZQ-dm-r6m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vy-45-seo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="zqw-iC-qgj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="w7H-Rg-gaO" secondAttribute="trailing" constant="10" id="E4C-nh-Ect"/>
+                            <constraint firstItem="w7H-Rg-gaO" firstAttribute="top" secondItem="X2V-ec-GQW" secondAttribute="bottom" constant="10" id="EnV-5Y-02g"/>
+                            <constraint firstAttribute="trailing" secondItem="sZX-L6-1uP" secondAttribute="trailing" constant="10" id="Llb-9D-fVM"/>
+                            <constraint firstItem="w7H-Rg-gaO" firstAttribute="leading" secondItem="Vre-Ac-Hbm" secondAttribute="leading" constant="15" id="T2w-5Q-py9"/>
+                            <constraint firstItem="9vy-45-seo" firstAttribute="top" secondItem="Vre-Ac-Hbm" secondAttribute="top" id="VeJ-dN-JlF"/>
+                            <constraint firstItem="9vy-45-seo" firstAttribute="leading" secondItem="Vre-Ac-Hbm" secondAttribute="leading" id="fzJ-96-yl8"/>
+                            <constraint firstItem="X2V-ec-GQW" firstAttribute="top" secondItem="Vre-Ac-Hbm" secondAttribute="top" constant="15" id="i9b-w7-18s"/>
+                            <constraint firstItem="X2V-ec-GQW" firstAttribute="leading" secondItem="Vre-Ac-Hbm" secondAttribute="leading" constant="15" id="iLi-PW-7dF"/>
+                            <constraint firstItem="sZX-L6-1uP" firstAttribute="top" secondItem="Vre-Ac-Hbm" secondAttribute="top" constant="15" id="vcK-4j-azy"/>
+                            <constraint firstAttribute="trailing" secondItem="9vy-45-seo" secondAttribute="trailing" id="zsg-Z2-DlH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Vre-Ac-Hbm" secondAttribute="trailing" id="2aD-Lc-uGl"/>
+                    <constraint firstItem="Vre-Ac-Hbm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SiM-gr-aHH"/>
+                    <constraint firstItem="Vre-Ac-Hbm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="pK3-sd-gQo"/>
+                    <constraint firstAttribute="bottom" secondItem="Vre-Ac-Hbm" secondAttribute="bottom" id="scf-bs-8CU"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+</document>

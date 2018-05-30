@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="KGk-i7-Jjw" customClass="CreditCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每日签到" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQa-jl-OlM">
+                        <rect key="frame" x="20" y="12" width="56" height="20"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                        <color key="textColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDO-LW-yqw">
+                        <rect key="frame" x="285.5" y="21.5" width="18.5" height="21"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Medium" family="PingFang SC" pointSize="15"/>
+                        <color key="textColor" red="0.24313725490196078" green="0.70588235294117641" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-05-09 12:12:12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uml-m7-d8W">
+                        <rect key="frame" x="20" y="36" width="115.5" height="17"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
+                        <color key="textColor" red="0.54117647059999996" green="0.54117647059999996" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUS-sa-I02" userLabel="分割线">
+                        <rect key="frame" x="10" y="0.0" width="300" height="1"/>
+                        <color key="backgroundColor" red="0.88235294119999996" green="0.88235294119999996" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="BIk-AO-Ank"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uml-m7-d8W" firstAttribute="leading" secondItem="mQa-jl-OlM" secondAttribute="leading" id="5no-Th-02c"/>
+                    <constraint firstItem="mQa-jl-OlM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="621-QV-oVO"/>
+                    <constraint firstItem="tDO-LW-yqw" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Jck-Gd-Pi4"/>
+                    <constraint firstItem="tUS-sa-I02" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="WK3-PW-Oqy"/>
+                    <constraint firstItem="mQa-jl-OlM" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ZpJ-wf-kbJ"/>
+                    <constraint firstAttribute="trailing" secondItem="tUS-sa-I02" secondAttribute="trailing" constant="10" id="eed-Li-CvO"/>
+                    <constraint firstItem="tUS-sa-I02" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nDa-GX-zp0"/>
+                    <constraint firstItem="uml-m7-d8W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="4" id="rN7-Dr-I76"/>
+                    <constraint firstAttribute="trailing" secondItem="tDO-LW-yqw" secondAttribute="trailing" constant="16" id="xga-lN-hcq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="creditLabel" destination="tDO-LW-yqw" id="AK0-4h-WtZ"/>
+                <outlet property="dateLabel" destination="uml-m7-d8W" id="DUI-kR-P2U"/>
+                <outlet property="titleLabel" destination="mQa-jl-OlM" id="OGI-fu-set"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="63.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yeA-L0-X00">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--停车场明细-->
+        <scene sceneID="5ra-1c-F3l">
+            <objects>
+                <viewController title="停车场明细" id="yeA-L0-X00" customClass="ParkingDetailController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l3h-Fu-5n7"/>
+                        <viewControllerLayoutGuide type="bottom" id="ed8-XR-7w6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kjz-5d-h5i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="5LV-Ke-gcj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="yeA-L0-X00" id="pzG-AS-DMn"/>
+                                    <outlet property="delegate" destination="yeA-L0-X00" id="Ebe-DZ-kcC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5LV-Ke-gcj" firstAttribute="top" secondItem="Kjz-5d-h5i" secondAttribute="top" id="AlL-kY-jfP"/>
+                            <constraint firstItem="5LV-Ke-gcj" firstAttribute="leading" secondItem="Kjz-5d-h5i" secondAttribute="leading" id="UtL-9S-SXq"/>
+                            <constraint firstAttribute="bottom" secondItem="5LV-Ke-gcj" secondAttribute="bottom" id="YcH-wW-fPj"/>
+                            <constraint firstAttribute="trailing" secondItem="5LV-Ke-gcj" secondAttribute="trailing" id="khf-Az-gvn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="5LV-Ke-gcj" id="169-t1-LJZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wa7-OZ-gLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153" y="125"/>
+        </scene>
+    </scenes>
+</document>
